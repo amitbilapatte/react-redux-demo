@@ -9,7 +9,7 @@ const burgerReducer = (state = initialState, action) => {
     case BUY_BURGER:
       return {
         ...state,
-        numOfBurgers: state.numOfBurgers > 0 ? state.numOfBurgers - 1 : 0,
+        numOfBurgers: state.numOfBurgers - action.payload >= 0 ? state.numOfBurgers - action.payload : 0,
       };
     default:
       return state;

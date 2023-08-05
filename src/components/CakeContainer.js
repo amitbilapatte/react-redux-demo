@@ -17,7 +17,7 @@ function CakeContainer(props) {
             fontFamily: "Arial, sans-serif",
           }}
         >
-          The Cake Shop
+          Frosty Delights Café
         </h1>
       </div>
       <div>
